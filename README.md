@@ -1,4 +1,4 @@
-# Gure Employee Management System (Lab 9)
+#  Employee Management System (Lab 9)
 
 ## Overview
 This project is a simple LAMP stack web application created for INET 4031 Lab 9.  
