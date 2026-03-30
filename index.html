@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gure Employee Management System</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+            text-align: center;
+        }
+        h1 {
+            background: #1f4fa3;
+            color: white;
+            padding: 15px;
+        }
+        .container {
+            margin: 30px auto;
+            width: 80%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .create { background: green; }
+        .find { background: blue; }
+        .edit { background: orange; }
+        .delete { background: red; }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background: #1f4fa3;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Gure Employee Management System</h1>
+
+<div class="container">
+
+    <button class="create">Create Employee</button>
+    <button class="find" onclick="location.href='findemployee.html'">Find Employee</button>
+    <button class="edit">Edit Employee</button>
+    <button class="delete">Delete Employee</button>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Department</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+
+        <tr>
+            <td>E1001</td>
+            <td>Mirza Baig</td>
+            <td>DevOps Engineer</td>
+            <td>IT</td>
+            <td>mirza.baig@team2s.com</td>
+            <td>
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>E1002</td>
+            <td>Mohamed Gure</td>
+            <td>System Administrator</td>
+            <td>IT</td>
+            <td>mohamed.gure@team2s.com</td>
+            <td>
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>E1003</td>
+            <td>Debora Mekonen</td>
+            <td>Developer</td>
+            <td>IT</td>
+            <td>debora.mekonen@team2s.com</td>
+            <td>
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
