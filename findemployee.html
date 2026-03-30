@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Employee</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+            text-align: center;
+        }
+        h1 {
+            background: #1f4fa3;
+            color: white;
+            padding: 15px;
+        }
+        .container {
+            margin: 30px auto;
+            width: 60%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input {
+            padding: 10px;
+            width: 60%;
+        }
+        button {
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .result {
+            margin-top: 20px;
+            background: #d4edda;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Find Employee</h1>
+
+<div class="container">
+
+    <p><b>Default search value has been updated!</b></p>
+
+    <input type="text" value="Gure" id="searchBox">
+    <button onclick="searchEmployee()">Search</button>
+
+    <div class="result" id="result">
+        Employee found: Mohamed Gure (System Administrator)
+    </div>
+
+    <br>
+    <button onclick="location.href='index.html'">Back to Home</button>
+
+</div>
+
+<script>
+function searchEmployee() {
+    let value = document.getElementById("searchBox").value;
+    if (value.toLowerCase() === "gure") {
+        document.getElementById("result").innerHTML =
+            "Employee found: Mohamed Gure (System Administrator)";
+    } else {
+        document.getElementById("result").innerHTML =
+            "No employee found.";
+    }
+}
+</script>
+
+</body>
+</html>
